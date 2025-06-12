@@ -158,7 +158,7 @@ function getEstimateHtmlString(damage) {
 		innerDamageString += ` + ${getDamageString(damage.minPersistent, damage.maxPersistent, stringType)} ${persistentDamageSuffix}`;
 	}
 
-	const hrBeforeSpanString = `<hr style="width:80%; opacity:0.5">`;
+	const hrBeforeSpanString = `<hr style="width:80%; opacity:0.5; margin:0.5em auto">`;
 	const spanString = `<span class="damage instance color">${innerDamageString}</span>`;
 	
 	return hrBeforeSpanString + spanString;
